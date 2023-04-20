@@ -14,27 +14,54 @@
 
         <title>Bootstrap Project</title>
     </head>
-    <body>
-        <!-- Navigation Bar -->
-        <nav>
-            <ul>
-                <li><a href="index.html" target="_self">Index</a></li>
-            </ul>
-        </nav>
 
+    <body class="text-center">
         <!-- Top Content -->
-        <header class="container">
-            <h1>Hello World!</h1>
+        <header>
+            <h1 class="text-bg-dark">Bootstrap Examples</h1>
         </header>
 
         <!-- Main Content -->
         <main>
-            <section class="container container-sm"><h2>Container NORMAL or SM</h2></section>
-            <section class="container-md"><h2>Container MD</h2></section>
-            <section class="container-lg"><h2>Container LG</h2></section>
-            <section class="container-xl"><h2>Container XL</h2></section>
-            <section class="container-xxl"><h2>Container XXL</h2></section>
-            <section class="container-fluid"><h2>Container FLUID</h2></section>
+            <!-- Containers -->
+            <section>
+                <h2 class="text-bg-secondary">Containers</h2>
+                <div class="container container-sm my-2 border border-black"><h3>Container NORMAL or SM</h3></div>
+                <div class="container-md my-2 border border-black"><h3>Container MD</h3></div>
+                <div class="container-lg my-2 border border-black"><h3>Container LG</h3></div>
+                <div class="container-xl my-2 border border-black"><h3>Container XL</h3></div>
+                <div class="container-xxl my-2 border border-black"><h3>Container XXL</h3></div>
+                <div class="container-fluid my-2 border border-black"><h3>Container FLUID</h3></div>
+            </section>
+
+            <!-- Grids with Rows and Columns -->
+            <section>
+                <h2 class="text-bg-secondary">Grids with Rows and Columns</h2>
+                <div class="container my-2 border border-black">
+                    <div class="row">
+                        <div class="col"><div class="bg-primary-subtle p-2">column</div></div>
+                        <div class="col"><div class="bg-primary-subtle p-2">column</div></div>
+                        <div class="col"><div class="bg-primary-subtle p-2">column</div></div>
+                    </div>
+                </div>
+
+                <div class="container my-2 border border-black">
+                    <div class="row">
+                        <div class="col"><div class="bg-primary-subtle p-2">column</div></div>
+                        <div class="col"><div class="bg-primary-subtle p-2">column</div></div>
+                        <div class="col"><div class="bg-primary-subtle p-2">column</div></div>
+                        <div class="col"><div class="bg-primary-subtle p-2">column</div></div>
+                    </div>
+                </div>
+
+                <div class="container my-2 border border-black ">
+                    <div class="row">
+                        <div class="col-md-3 col-3"><div class="bg-primary-subtle p-2">column md 3 / column 3</div></div>
+                        <div class="col-md-6 col-9"><div class="bg-primary-subtle p-2">column md 6 / column 9</div></div>
+                        <div class="col-md-3 col-12"><div class="bg-primary-subtle p-2">column md 3 / column 12</div></div>
+                    </div>
+                </div>
+            </section>
         </main>
 
         <!-- Bootstrap JavaScript Connection -->

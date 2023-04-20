@@ -1,8 +1,5 @@
-* {
-    overflow-x: hidden;
-}
-
 body {
+    overflow-x: hidden;
     background-image: url("../img/background.png");
 }
 
@@ -15,3 +12,10 @@ body {
     top:50%;
     transform: translateY(-50%);
 }
+
+hr {
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    border: 0;
+    border-top: 5px solid rgba(0, 0, 0, 0.1);
+  }

@@ -70,56 +70,97 @@
 
     <!-- Main -->
     <main>
-        <!-- Carousel -->
-        <section class="text-center text-light mt-5">
-            <div class="container">
-                <div class="row justify-content-center">
-                    <div class="col-12 col-lg-6">
-                        <div id="carouselExample" class="carousel slide" data-bs-ride="carousel">
-                            <div class="carousel-inner">
-                              <div class="carousel-item active" data-bs-interval="2000">
-                                <img src="./assets/img/escom-one.jpg" class="d-block w-100 rounded-4" alt="...">
-                              </div>
-                              <div class="carousel-item" data-bs-interval="2000">
-                                <img src="./assets/img/escom-two.jpg" class="d-block w-100 rounded-4" alt="...">
-                              </div>
-                              <div class="carousel-item" data-bs-interval="2000">
-                                <img src="./assets/img/escom-three.png" class="d-block w-100 rounded-4" alt="...">
-                              </div>
+        <!-- Carousel Section -->
+        <section class="text-center text-light mt-5 container">
+            <div class="row justify-content-center">
+                <div class="col-12 col-lg-6">
+                    <div id="carouselExample" class="carousel slide" data-bs-ride="carousel">
+                        <div class="carousel-inner">
+                            <div class="carousel-item active" data-bs-interval="2000">
+                            <img src="./assets/img/escom-one.jpg" class="d-block w-100 rounded-4" alt="...">
                             </div>
+                            <div class="carousel-item" data-bs-interval="2000">
+                            <img src="./assets/img/escom-two.jpg" class="d-block w-100 rounded-4" alt="...">
+                            </div>
+                            <div class="carousel-item" data-bs-interval="2000">
+                            <img src="./assets/img/escom-three.png" class="d-block w-100 rounded-4" alt="...">
+                            </div>
+                        </div>
 
-                            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
-                              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                              <span class="visually-hidden">Previous</span>
-                            </button>
+                        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Previous</span>
+                        </button>
 
-                            <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
-                              <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                              <span class="visually-hidden">Next</span>
-                            </button>
-                          </div>
-                    </div>
+                        <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Next</span>
+                        </button>
+                        </div>
+                </div>
 
-                    <div class="col-12 col-lg-6">
-                        <div class="row vertical-align">
-                            <p class="fs-3">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Tempora, repellendus? Harum, atque maxime error labore a id officia hic impedit alias asperiores dicta non reiciendis voluptatibus placeat. Cupiditate, itaque nisi.</p>
+                <div class="col-12 col-lg-6">
+                    <div class="row vertical-align">
+                        <p class="fs-3">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Tempora, repellendus? Harum, atque maxime error labore a id officia hic impedit alias asperiores dicta non reiciendis voluptatibus placeat. Cupiditate, itaque nisi.</p>
 
+                        <p>
                             <button type="button" class="btn btn-outline-light btn-lg">
                                 <a class="nav-link" href="https://www.linkedin.com/in/santiago-perez-gomez/" target="_blank">
                                     <i class="bi bi-linkedin"></i>
                                     Connect with me on LinkedIn
                                 </a>
                             </button>
-                        </div>
+                        </p>
                     </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Cards Section -->
+        <section class="text-center text-light mt-5 container">
+            <div class="row">
+                <h2 class="col-12 mb-5">Favorite Video Games</h2>
+            </div>
+
+            <div class="row">
+                <div class="col-4 d-flex justify-content-center">
+                    <div class="card text-bg-dark mb-3" style="width: 18rem;">
+                        <img src="./assets/img/crash.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                          <h5 class="card-title">Crash Bandicoot</h5>
+                          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                        </div>
+                      </div>
+                </div>
+
+                <div class="col-4 d-flex justify-content-center">
+                    <div class="card text-bg-dark mb-3" style="width: 18rem;">
+                        <img src="./assets/img/gow.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                          <h5 class="card-title">Gears of War</h5>
+                          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                        </div>
+                      </div>
+                </div>
+
+                <div class="col-4 d-flex justify-content-center">
+                    <div class="card text-bg-dark mb-3" style="width: 18rem;">
+                        <img src="./assets/img/rayman.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                          <h5 class="card-title">Rayman</h5>
+                          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                        </div>
+                      </div>
                 </div>
             </div>
         </section>
     </main>
 
     <!-- Footer -->
-    <footer>
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#000000" fill-opacity="1" d="M0,256L6.2,234.7C12.3,213,25,171,37,176C49.2,181,62,235,74,234.7C86.2,235,98,181,111,138.7C123.1,96,135,64,148,48C160,32,172,32,185,58.7C196.9,85,209,139,222,165.3C233.8,192,246,192,258,160C270.8,128,283,64,295,64C307.7,64,320,128,332,176C344.6,224,357,256,369,240C381.5,224,394,160,406,122.7C418.5,85,431,75,443,85.3C455.4,96,468,128,480,160C492.3,192,505,224,517,197.3C529.2,171,542,85,554,74.7C566.2,64,578,128,591,176C603.1,224,615,256,628,245.3C640,235,652,181,665,144C676.9,107,689,85,702,90.7C713.8,96,726,128,738,149.3C750.8,171,763,181,775,176C787.7,171,800,149,812,128C824.6,107,837,85,849,85.3C861.5,85,874,107,886,106.7C898.5,107,911,85,923,106.7C935.4,128,948,192,960,181.3C972.3,171,985,85,997,69.3C1009.2,53,1022,107,1034,138.7C1046.2,171,1058,181,1071,197.3C1083.1,213,1095,235,1108,250.7C1120,267,1132,277,1145,256C1156.9,235,1169,181,1182,165.3C1193.8,149,1206,171,1218,154.7C1230.8,139,1243,85,1255,74.7C1267.7,64,1280,96,1292,122.7C1304.6,149,1317,171,1329,154.7C1341.5,139,1354,85,1366,69.3C1378.5,53,1391,75,1403,96C1415.4,117,1428,139,1434,149.3L1440,160L1440,320L1433.8,320C1427.7,320,1415,320,1403,320C1390.8,320,1378,320,1366,320C1353.8,320,1342,320,1329,320C1316.9,320,1305,320,1292,320C1280,320,1268,320,1255,320C1243.1,320,1231,320,1218,320C1206.2,320,1194,320,1182,320C1169.2,320,1157,320,1145,320C1132.3,320,1120,320,1108,320C1095.4,320,1083,320,1071,320C1058.5,320,1046,320,1034,320C1021.5,320,1009,320,997,320C984.6,320,972,320,960,320C947.7,320,935,320,923,320C910.8,320,898,320,886,320C873.8,320,862,320,849,320C836.9,320,825,320,812,320C800,320,788,320,775,320C763.1,320,751,320,738,320C726.2,320,714,320,702,320C689.2,320,677,320,665,320C652.3,320,640,320,628,320C615.4,320,603,320,591,320C578.5,320,566,320,554,320C541.5,320,529,320,517,320C504.6,320,492,320,480,320C467.7,320,455,320,443,320C430.8,320,418,320,406,320C393.8,320,382,320,369,320C356.9,320,345,320,332,320C320,320,308,320,295,320C283.1,320,271,320,258,320C246.2,320,234,320,222,320C209.2,320,197,320,185,320C172.3,320,160,320,148,320C135.4,320,123,320,111,320C98.5,320,86,320,74,320C61.5,320,49,320,37,320C24.6,320,12,320,6,320L0,320Z" data-darkreader-inline-fill="" style="--darkreader-inline-fill:#007acc;"></path></svg>
+    <footer class="text-center text-light mt-5 bg-dark">
+        <div class="row">
+            <h3 class="col-12 p-5">Made by: Santi PerGo</h3>
+        </div>
     </footer>
 
     <!-- Bootstrap -->

@@ -1,0 +1,12 @@
+body {
+    overflow-x: hidden;
+    background-image: url("../img/background.png");
+}
+
+header {
+    margin-top: 7.5rem;
+}
+
+.nav-icon {
+    max-height: 2rem;
+}

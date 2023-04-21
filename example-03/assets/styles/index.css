@@ -1,21 +1,9 @@
-body {
-    overflow-x: hidden;
-    background-image: url("../img/background.png");
-}
-
-.nav-icon {
-    max-height: 2rem;
-}
-
 .vertical-align {
     position: relative;
     top:50%;
     transform: translateY(-50%);
 }
 
-hr {
-    margin-top: 1rem;
-    margin-bottom: 1rem;
-    border: 0;
-    border-top: 5px solid rgba(0, 0, 0, 0.1);
-  }
+.card {
+    cursor: pointer;
+}

@@ -15,14 +15,27 @@
     <!-- Bootstrap Icons -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.4/font/bootstrap-icons.css">
 
+    <!-- Particles CSS -->
+    <link rel="stylesheet" href="./assets/styles/squares.css">
+
     <!-- CSS -->
+    <link rel="stylesheet" href="./assets/styles/common.css" />
     <link rel="stylesheet" href="./assets/styles/index.css" />
 
     <title>Bootstrap Demo</title>
   </head>
+
   <body>
+
+    <!-- Squares Animation with CSS -->
+    <div class="cube"></div>
+    <div class="cube"></div>
+    <div class="cube"></div>
+    <div class="cube"></div>
+    <div class="cube"></div>
+
     <!-- Navbar -->
-    <nav class="navbar navbar-expand-sm bg-dark" data-bs-theme="dark">
+    <nav class="navbar navbar-expand-sm fixed-top bg-dark" data-bs-theme="dark">
         <div class="container-fluid">
             <a class="navbar-brand" href="#"><img src="./assets/img/labrador-icon.png" class="nav-icon" alt="Icon"></a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -31,17 +44,14 @@
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                     <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="#">Home</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="https://www.linkedin.com/in/santiago-perez-gomez/" target="_blank">LinkedIn</a>
+                        <a class="nav-link active" aria-current="page" href="./index.html">Home</a>
                     </li>
                     <li class="nav-item dropdown">
                         <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                             Projects
                         </a>
                         <ul class="dropdown-menu">
-                            <li><a class="dropdown-item" href="#">Tell me your name</a></li>
+                            <li><a class="dropdown-item" href="./assets/html/name.html">Tell me your name</a></li>
                             <li><a class="dropdown-item disabled" href="#">Calculator</a></li>
                             <li><hr class="dropdown-divider"></li>
                             <li><a class="dropdown-item disabled" href="#">Something else here</a></li>
@@ -57,9 +67,9 @@
 
     <!-- Header -->
     <header>
-        <section class="text-center text-light mt-5">
+        <section class="text-center text-light">
             <div class="row">
-                <h1 class="col-12">Santiago Perez Gomez</h1>
+                <h1 class="col-12">Santiago Pérez Gómez</h1>
             </div>
             
             <div class="row">
@@ -116,50 +126,87 @@
             </div>
         </section>
 
-        <!-- Cards Section -->
+        <!-- DOM Access with JavaScript -->
         <section class="text-center text-light mt-5 container">
             <div class="row">
-                <h2 class="col-12 mb-5">Favorite Video Games</h2>
+                <h2 class="col-12 mb-5 reset-color" id="name">Choose a Video Game or a Button for Color Change</h2>
             </div>
 
+            <!-- Cards -->
             <div class="row">
                 <div class="col-4 d-flex justify-content-center">
-                    <div class="card text-bg-dark mb-3" style="width: 18rem;">
+                    <div class="card text-bg-dark mb-3 reset-color" style="width: 18rem;" onclick="changeCardColor(this, 'text-bg-danger')">
                         <img src="./assets/img/crash.jpg" class="card-img-top" alt="...">
                         <div class="card-body">
                           <h5 class="card-title">Crash Bandicoot</h5>
                           <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                          <button type="button" class="btn btn-outline-light btn-lg" onclick="changeNameColor('name', 'lightcoral');">
+                            Click here for red title
+                          </button>
                         </div>
                       </div>
                 </div>
 
                 <div class="col-4 d-flex justify-content-center">
-                    <div class="card text-bg-dark mb-3" style="width: 18rem;">
+                    <div class="card text-bg-dark mb-3 reset-color" style="width: 18rem;" onclick="changeCardColor(this, 'text-bg-info')">
                         <img src="./assets/img/gow.jpg" class="card-img-top" alt="...">
                         <div class="card-body">
                           <h5 class="card-title">Gears of War</h5>
                           <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                          <button type="button" class="btn btn-outline-light btn-lg" onclick="changeNameColor('name', 'lightblue');">
+                            Click here for blue title
+                          </button>
                         </div>
                       </div>
                 </div>
 
                 <div class="col-4 d-flex justify-content-center">
-                    <div class="card text-bg-dark mb-3" style="width: 18rem;">
+                    <div class="card text-bg-dark mb-3 reset-color" style="width: 18rem;" onclick="changeCardColor(this, 'text-bg-success')">
                         <img src="./assets/img/rayman.jpg" class="card-img-top" alt="...">
                         <div class="card-body">
                           <h5 class="card-title">Rayman</h5>
                           <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                          <button type="button" class="btn btn-outline-light btn-lg" onclick="changeNameColor('name', 'lightgreen');">
+                            Click here for green title
+                          </button>
                         </div>
                       </div>
                 </div>
             </div>
+
+            <!-- Reset Button -->
+            <div class="row m-5">
+                <div class="col">
+                    <button type="button" class="btn btn-outline-light btn-lg" onclick="resetCardsColors('reset-color');">
+                        Click here for color reset
+                    </button>
+                </div>
+            </div>
         </section>
+  
     </main>
 
     <!-- Footer -->
     <footer class="text-center text-light mt-5 bg-dark">
-        <div class="row">
-            <h3 class="col-12 p-5">Made by: Santi PerGo</h3>
+        <div class="row p-5">
+            <div class="navbar navbar-expand-sm fs-3" data-bs-theme="dark">
+                <div class="collapse navbar-collapse justify-content-center" id="navbarSupportedContent">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link bi bi-linkedin" href="https://www.linkedin.com/in/santiago-perez-gomez/" target="_blank"></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link bi bi-github" href="https://github.com/SantiPerGo" target="_blank"></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link bi bi-facebook" href="https://www.facebook.com/santi.pergo/" target="_blank"></a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <h4 class="col-12">Copyright © 2023</h4>
+            <h5 class="col-12">All Rights Reserved</h5>
+            <h6 class="col-12">Made with Bootstrap</h6>
         </div>
     </footer>
 
@@ -169,5 +216,8 @@
       integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe"
       crossorigin="anonymous"
     ></script>
+
+    <!-- Custom JavaScript -->
+    <script src="./assets/js/index.js"></script>
   </body>
 </html>

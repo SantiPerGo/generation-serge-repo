@@ -5,4 +5,5 @@ Examples:
 <ol>
     <li>Basic structure for an HTML, CSS and JS project</li>
     <li>Basic structure for a Bootstrap project</li>
+    <li>Personal Website with Bootstrap</li>
 </ol>

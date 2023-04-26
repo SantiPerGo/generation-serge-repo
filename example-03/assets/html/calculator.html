@@ -15,25 +15,14 @@
     <!-- Bootstrap Icons -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.4/font/bootstrap-icons.css">
 
-    <!-- Particles CSS -->
-    <link rel="stylesheet" href="../styles/squares.css">
-
     <!-- CSS -->
     <link rel="stylesheet" href="../styles/common.css" />
-    <link rel="stylesheet" href="../styles/name.css" />
+    <link rel="stylesheet" href="../styles/calculator.css" />
 
-    <title>Tell Me Your Name</title>
+    <title>Calculator</title>
   </head>
 
   <body>
-
-    <!-- Squares Animation with CSS -->
-    <div class="cube"></div>
-    <div class="cube"></div>
-    <div class="cube"></div>
-    <div class="cube"></div>
-    <div class="cube"></div>
-
     <!-- Navbar -->
     <nav class="navbar navbar-expand-sm fixed-top bg-dark" data-bs-theme="dark">
         <div class="container-fluid">
@@ -71,26 +60,104 @@
     <header>
         <section class="text-center text-light">
             <div class="row">
-                <h1 class="col-12" id="title-name">Hi Visitor!</h1>
+                <h1 class="col-12">Calculator</h1>
             </div>
-            
+
             <div class="row">
-                <h2 class="col-12">Welcome to the Second Page</h2>
+                <h2 class="col-12">(15 Digits Limit)</h2>
             </div>
         </section>
     </header>
 
     <!-- Main -->
     <main>
-        <section class="text-center text-light m-5">
-            <button type="button" class="btn btn-outline-light btn-lg" onclick="changeTitleName('title-name');">
-                Click Here to Change the Name
-            </button>
+        <section class="text-center text-light container pt-5">
+            <div class="row bg-black rounded-3 rounded-bottom-0">
+                <div class="col fs-1" id="calculator-title">0</div>
+            </div>
+
+            <div class="row fs-1">
+                <div class="col">
+                    <div class="row calculator-button-blue bg-primary">
+                        <div onclick="buttonPressed(this)" id="plus">+</div>
+                    </div>
+
+                    <div class="row calculator-button-white text-black bg-light">
+                        <div onclick="buttonPressed(this)" id="seven">7</div>
+                    </div>
+
+                    <div class="row calculator-button-white text-black bg-light">
+                        <div onclick="buttonPressed(this)" id="four">4</div>
+                    </div>
+
+                    <div class="row calculator-button-white text-black bg-light">
+                        <div onclick="buttonPressed(this)" id="one">1</div>
+                    </div>
+
+                    <div class="row calculator-button-white text-black bg-light">
+                        <div onclick="buttonPressed(this)" id="zero">0</div>
+                    </div>
+                </div>
+
+                <div class="col">
+                    <div class="row calculator-button-blue bg-primary">
+                        <div onclick="buttonPressed(this)" id="minus">-</div>
+                    </div>
+
+                    <div class="row calculator-button-white text-black bg-light">
+                        <div onclick="buttonPressed(this)" id="eight">8</div>
+                    </div>
+
+                    <div class="row calculator-button-white text-black bg-light">
+                        <div onclick="buttonPressed(this)" id="five">5</div>
+                    </div>
+
+                    <div class="row calculator-button-white text-black bg-light">
+                        <div onclick="buttonPressed(this)" id="two">2</div>
+                    </div>
+
+                    <div class="row calculator-button-white text-black bg-light">
+                        <div onclick="buttonPressed(this)" id="dot">.</div>
+                    </div>
+                </div>
+
+                <div class="col">
+                    <div class="row calculator-button-blue bg-primary">
+                        <div onclick="buttonPressed(this)" id="multiply">x</div>
+                    </div>
+
+                    <div class="row calculator-button-white text-black bg-light">
+                        <div onclick="buttonPressed(this)" id="nine">9</div>
+                    </div>
+
+                    <div class="row calculator-button-white text-black bg-light">
+                        <div onclick="buttonPressed(this)" id="six">6</div>
+                    </div>
+
+                    <div class="row calculator-button-white text-black bg-light">
+                        <div onclick="buttonPressed(this)" id="three">3</div>
+                    </div>
+
+                    <div class="row bg-danger text-light calculator-button-red">
+                        <div onclick="buttonPressed(this)" id="ac">AC</div>
+                    </div>
+                </div>
+
+                <div class="col">
+                    <div class="row calculator-button-blue bg-primary">
+                        <div onclick="buttonPressed(this)" id="divide">/</div>
+                    </div>
+
+                    <div class="row calculator-button-white text-black bg-light" id="equal-container">
+                        <div onclick="buttonPressed(this)" id="equal">=</div>
+                    </div>
+                </div>
+            </div>
         </section>
     </main>
 
     <!-- Footer -->
-    <footer class="text-center text-light mt-5 bg-dark fixed-bottom">
+    <footer class="text-center text-light mt-5 bg-dark">
         <div class="row p-5">
             <div class="navbar navbar-expand-sm fs-3" data-bs-theme="dark">
                 <div class="collapse navbar-collapse justify-content-center" id="navbarSupportedContent">
@@ -121,6 +188,6 @@
     ></script>
 
     <!-- Custom JavaScript -->
-    <script src="../js/name.js"></script>
+    <script src="../js/calculator.js"></script>
   </body>
 </html>

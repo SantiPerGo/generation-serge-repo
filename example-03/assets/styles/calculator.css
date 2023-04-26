@@ -1,0 +1,17 @@
+.calculator-button-white:hover {
+    background-color: lightgray !important;
+}
+
+.calculator-button-blue:hover {
+    background-color: lightskyblue !important;
+}
+
+.calculator-button-red:hover {
+    background-color: lightcoral !important;
+}
+
+#equal-container {
+    height: 80%;
+    align-items: center;
+    font-size: 5rem;
+}

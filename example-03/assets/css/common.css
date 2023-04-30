@@ -16,3 +16,8 @@ hr {
     border-top: 1rem dashed black;
     margin: 3rem 0;
 }
+
+select option {
+    background-color: gray;
+    color: white;
+}

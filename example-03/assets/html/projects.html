@@ -38,7 +38,7 @@
             </div>
 
             <div class="row">
-                <div class="div">
+                <div>
                     <button type="button" class="btn btn-outline-info btn-lg" onclick="changeTitleName('title-name');">
                         Click Here to Enter your Name
                     </button>
@@ -159,6 +159,60 @@
                         No, you're wrong
                     </button>
                 </div>
+            </div>
+        </section>
+
+        <!-- Get the date -->
+        <hr><section class="text-center text-light my-5 fs-3">
+
+            <div class="row justify-content-center align-items-center">
+                
+                <div class="col-8 col-lg-3">
+                    <p><label for="year">Enter a year (1 to 9999):</label></p>
+                    <p><input type="number" id="year" min="1" max="9999" onchange="updateValidDays()" class="w-75 bg-transparent border border-info text-info my-5"></p>
+                </div>
+
+                <div class="col-8 col-lg-3">
+                    <p><label for="month">Choose a month:</label></p>
+                    <p class="d-flex align-items-center justify-content-center">
+                        <select id="month" onchange="updateValidDays()" class="form-select bg-transparent border border-info text-info w-75 fs-5 my-5">
+                            <option value="0">January</option>
+                            <option value="1">February</option>
+                            <option value="2">March</option>
+                            <option value="3">April</option>
+                            <option value="4">May</option>
+                            <option value="5">June</option>
+                            <option value="6">July</option>
+                            <option value="7">August</option>
+                            <option value="8">September</option>
+                            <option value="9">October</option>
+                            <option value="10">November</option>
+                            <option value="11">December</option>
+                        </select>
+                    </p>
+                </div>
+
+                <div class="col-8 col-lg-3">
+                    <p><label for="day">Choose a day:</label></p>
+                    <p class="d-flex align-items-center justify-content-center">
+                        <select id="day" class="form-select bg-transparent border border-info text-info w-75 fs-5 my-5">
+                            <option value="invalid">Choose a day</option>
+                        </select>
+                    </p>
+                </div>
+
+            </div>
+
+            <div class="row">
+                <div>
+                    <button type="button" class="btn btn-outline-info btn-lg" onclick="calculateDay();">
+                        Click Here to Get the Weekday
+                    </button>
+                </div>
+            </div>
+
+            <div class="row my-5">
+                <h3 id="today"></h3>
             </div>
         </section>
     </main>

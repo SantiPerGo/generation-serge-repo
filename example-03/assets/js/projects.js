@@ -180,3 +180,78 @@ function restartGuessGame() {
     lowLimit = 1;
     highLimit = 100;
 }
+
+// **************************************************************************************
+// Calculate date functions
+// **************************************************************************************
+
+function updateValidDays() {
+    const year = parseInt( document.getElementById("year").value );
+    const month = parseInt( document.getElementById("month").value ) + 1;
+    const days = new Date(year, month, 0).getDate();
+    const selectList = document.getElementById("day");
+
+    // Deleting all the options created before
+    while (selectList.firstChild)
+        selectList.removeChild(selectList.firstChild);
+
+    // Deleting last text
+    document.getElementById("today").innerText = "";
+
+    // Creating the days of the month
+    if(isNaN(year)) {
+        const option = document.createElement("option");
+        option.value = "invalid";
+        option.text = "Choose a day";
+        selectList.appendChild(option);
+    } else 
+        for (let i = 1; i <= days; i++) {
+            const option = document.createElement("option");
+            option.value = i;
+            option.text = i;
+            selectList.appendChild(option);
+        }
+}
+
+function calculateDay() {
+    const year = parseInt( document.getElementById("year").value );
+    const month = parseInt( document.getElementById("month").value );
+    const day = parseInt( document.getElementById("day").value );
+    const todayElement = document.getElementById("today");
+
+    if(isNaN(year) || year < 1 || year > 9999)
+        todayElement.innerText = "You haven't entered a valid year";
+    else if(isNaN(day))
+        todayElement.innerText = "You haven't chosen a day";
+    else {
+        const today = new Date(year, month, day).getDay();
+        todayElement.innerText = dayToNumber(today) + calculateLeapYear(year);
+        todayElement.classList.remove("text-danger");
+    }
+}
+
+function calculateLeapYear(year) {
+    if(year % 4 === 0 && (year % 100 !== 0 || year % 400 === 0))
+        return ` (${year} is a leap-year)`;
+    else
+        return ` (${year} is a normal year)`;
+}
+
+function dayToNumber(day) {
+    switch(day) {
+        case 0:
+            return "Sunday, it's a day where you rest";
+        case 1:
+            return "Monday, it's a day where you work";
+        case 2:
+            return "Tuesday, it's a day where you work";
+        case 3:
+            return "Wednesday, it's a day where you work";
+        case 4:
+            return "Thursday, it's a day where you work";
+        case 5:
+            return "Friday, it's a day where you work";
+        case 6:
+            return "Saturday, it's a day where you rest";
+    }
+}

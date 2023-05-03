@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Session JS06</title>
+    </head>
+
+    <body>
+        <h1 class="title" id="title">Dom Manipulation with JavaScript</h1>
+        
+        <div class="subtitle">
+            <h2 class="subtitle" id="subtitle">
+                Generation Cohort 26
+            </h2>
+        </div>
+
+        <article>
+            <p id="generation-data">
+                The New in <strong>Generation</strong> is <em>Fridays</em>
+            </p>
+
+            <p class="intro" id="into">
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eius deleniti velit voluptates delectus adipisci. Omnis voluptatibus itaque a ipsum laborum culpa doloribus modi veniam maiores, officia id et neque temporibus.
+            </p>
+        </article>
+
+        <article id="article-news">
+            <p class="news" id="news">
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eius deleniti velit voluptates delectus adipisci. Omnis voluptatibus itaque a ipsum laborum culpa doloribus modi veniam maiores, officia id et neque temporibus.
+            </p>
+        </article>
+
+        <article id="buttons">
+            <p>
+                <button id="button-1">button 1</button>
+                <button id="button-2">button 2</button>
+                <button id="button-3">button 3</button>
+            </p>
+
+            <p>
+                <button id="button-delete" onclick="deleteButton('button-1')">Delete Button</button>
+                <button id="button-reset" onclick="resetButton('button-1')">Reset Button</button>
+            </p>
+
+            <p>
+                <button id="button-hide" onclick="hideButton('button-2')">Hide Button</button>
+                <button id="button-show" onclick="showButton('button-2')">Show Button</button>
+            </p>
+        </article>
+
+        <script src="./dom.js"></script>
+    </body>
+</html>

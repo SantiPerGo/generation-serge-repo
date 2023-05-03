@@ -12,10 +12,10 @@ console.log("The result of 5 / 2 =", divide("5", "2"));
 console.log("The result of 5 0 / 2 =", divide("5 0", "2"));
 
 // xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
-// Function expression
+// Expressed Function
 // xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
 
-// Function expressions are used in the declaration of a variable
+// Expressed functions are used in the declaration of a variable
 // No name, no hoist, are loaded on execution not in memory, are faster
 const sum = function add(a, b) { return a + b; };
 const substract = function (a, b) { return a - b; };

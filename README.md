@@ -13,4 +13,12 @@ Examples:
 		<li>Weekday calculator</li>
 	</ul>
     <li>JavaScript Examples</li>
+	<ol>
+		<li>Data Types</li>
+		<li>Declared, Expressed, Self-Invoke, Arrow, Callback and Recursive Functions</li>
+		<li>If, Switch and Ternary Operator</li>
+		<li>For, For-Each, For-Of and While Loops</li>
+		<li>Operators</li>
+		<li>DOM Manipulation and Forms</li>
+	</ol>
 </ol>

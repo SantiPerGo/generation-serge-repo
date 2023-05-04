@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <link href='https://fonts.googleapis.com/css?family=Orbitron' rel='stylesheet' type='text/css'>
+
+        <title>Session JS07</title>
+
+        <style>
+            #button-start {
+                background-color: lightgreen;
+            }
+
+            #button-start:hover {
+                background-color: green;
+                color: white;
+            }
+
+            #button-stop {
+                background-color: lightcoral;
+            }
+
+            #button-stop:hover {
+                background-color: red;
+                color: white;
+            }
+
+            #button-start,
+            #button-stop {
+                font-size: 20px;
+                border-radius: 20px;
+                padding: 20px;
+                margin: 20px;
+                border: 0;
+            }
+
+            #button-start:disabled,
+            #button-stop:disabled {
+                background-color: lightgray;
+                color: white;
+            }
+
+            #date {
+                font-size: 30px;
+                font-family: 'Orbitron', sans-serif;
+                margin: 0;
+                padding: 20px 0;
+                background-color: darkblue;
+                border-radius: 15px;
+                color: white;
+            }
+
+            #clock {
+                border: lightskyblue solid 5px;
+                padding: 0;
+                margin: 0 50px;
+                border-radius: 20px;
+            }
+
+            #clock-buttons {
+                background-color: lightskyblue;
+            }
+        </style>
+    </head>
+
+    <body style="text-align: center;">
+        <h1 style="margin-top: 50px;">Asynchronous Functions</h1>
+        
+        <div class="col" id="clock">
+            <div class="row">
+                <h2 id="date">Press the button below to get hour...</h2>
+            </div>
+
+            <div class="row" id="clock-buttons">
+                <button id="button-start">
+                    Get today's hour
+                </button>
+        
+                <button id="button-stop" disabled="true">
+                    Reset hour
+                </button>
+            </div>
+        </div>
+
+        <script src="./asynchrony.js"></script>
+    </body>
+</html>

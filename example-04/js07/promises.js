@@ -69,3 +69,16 @@ divideTwoNumbersPromise(25, 32)
 
     console.log("xxxxxxx Synchronous Code After Promise xxxxxxx");
 }) ();
+
+// xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+// Promises alternative declaration
+// xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+
+// Promise.resolve doesn't return reject, so we don't need a catch
+const alternativePromise = Promise.resolve(123);
+
+// With then
+alternativePromise.then(response => console.log("Then promise:", response));
+
+// With async-await
+(async () => console.log("Async-await try:", await alternativePromise)) ();

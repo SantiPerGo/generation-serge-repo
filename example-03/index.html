@@ -45,7 +45,7 @@
             </div>
             
             <div class="row">
-                <h2 class="col-12">About Me</h2>
+                <h2 class="col-12">JavaScript Fetch API</h2>
             </div>
         </section>
     </header>
@@ -53,39 +53,57 @@
     <!-- Main -->
     <main>
         <!-- Carousel Section -->
-        <section class="text-center text-light mt-5 container">
-            <div class="row justify-content-center">
+        <section class="text-center text-light my-5 container">
+            <div class="row d-flex align-items-center justify-content-center">
                 <div class="col-12 col-lg-6">
-                    <div id="carouselExample" class="carousel slide" data-bs-ride="carousel">
-                        <div class="carousel-inner">
-                            <div class="carousel-item active" data-bs-interval="2000">
-                            <img src="./assets/img/escom-one.jpg" class="d-block w-100 rounded-4" alt="...">
-                            </div>
-                            <div class="carousel-item" data-bs-interval="2000">
-                            <img src="./assets/img/escom-two.jpg" class="d-block w-100 rounded-4" alt="...">
-                            </div>
-                            <div class="carousel-item" data-bs-interval="2000">
-                            <img src="./assets/img/escom-three.png" class="d-block w-100 rounded-4" alt="...">
+                    <!-- Users Carousel -->
+                    <div id="carousel" class="carousel slide d-none" data-bs-ride="carousel">
+                        <div id="carousel-indicators" class="carousel-indicators">
+                            <button id="carousel-indicator" type="button" data-bs-target="#carousel" data-bs-slide-to="0"></button>
+                        </div>
+
+                        <div id="carousel-inner" class="carousel-inner">
+                            <div id="user-item" class="carousel-item" data-bs-interval="2000">
+                                <img id="user-img" class="d-block w-75 rounded-5 mx-auto">
+                                <div class="carousel-caption carousel-text-shadow">
+                                    <h5 id="user-name"></h5>
+                                    <p id="user-email"></p>
+                                </div>
                             </div>
                         </div>
 
-                        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+                        <button class="carousel-control-prev" type="button" data-bs-target="#carousel" data-bs-slide="prev">
                             <span class="carousel-control-prev-icon" aria-hidden="true"></span>
                             <span class="visually-hidden">Previous</span>
                         </button>
 
-                        <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+                        <button class="carousel-control-next" type="button" data-bs-target="#carousel" data-bs-slide="next">
                             <span class="carousel-control-next-icon" aria-hidden="true"></span>
                             <span class="visually-hidden">Next</span>
                         </button>
+                    </div>
+
+                    <!-- Spinner -->
+                    <div id="carousel-spinner" class="container-fluid text-white h-100 d-flex justify-content-center align-items-center">
+                        <div class="row">
+                            <svg style="fill:white;" width="150" height="150" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                <style>.spinner_9y7u{animation:spinner_fUkk 2.4s linear infinite;animation-delay:-2.4s}.spinner_DF2s{animation-delay:-1.6s}.spinner_q27e{animation-delay:-.8s}@keyframes spinner_fUkk{8.33%{x:13px;y:1px}25%{x:13px;y:1px}33.3%{x:13px;y:13px}50%{x:13px;y:13px}58.33%{x:1px;y:13px}75%{x:1px;y:13px}83.33%{x:1px;y:1px}}</style>
+                                <rect class="spinner_9y7u" x="1" y="1" rx="1" width="10" height="10"/>
+                                <rect class="spinner_9y7u spinner_DF2s" x="1" y="1" rx="1" width="10" height="10"/>
+                                <rect class="spinner_9y7u spinner_q27e" x="1" y="1" rx="1" width="10" height="10"/>
+                            </svg>
+                            <h2 id="loading" class="mt-5">Loading...</h2>
                         </div>
+                    </div>
                 </div>
 
-                <div class="col-12 col-lg-6">
-                    <div class="row vertical-align">
-                        <p class="fs-3 my-5">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Tempora, repellendus? Harum, atque maxime error labore a id officia hic impedit alias asperiores dicta non reiciendis voluptatibus placeat. Cupiditate, itaque nisi.</p>
+                <div class="col-12 col-lg-6 mt-5">
+                    <div class="row">
+                        <p class="fs-4">
+                            Users on the left side (desktop version) or above this text (mobile version) are requested via HTTP requests and dynamically loaded into the carousel, then saved to your browser with local storage for faster loading if you reload the page, but if the user data is out of date by 1 minute, another HTTP request is started and the same process is started from the beginning.
+                        </p>
 
-                        <p>
+                        <p class="mt-5">
                             <button type="button" class="btn btn-outline-light btn-lg">
                                 <a class="nav-link" href="https://www.linkedin.com/in/santiago-perez-gomez/" target="_blank">
                                     <i class="bi bi-linkedin"></i>

@@ -1,0 +1,9 @@
+a {
+    text-decoration: none;
+    font-size: 2rem;
+}
+
+.content {
+    font-family: 'Courier New', Courier, monospace;
+    letter-spacing: 0.1rem;
+}

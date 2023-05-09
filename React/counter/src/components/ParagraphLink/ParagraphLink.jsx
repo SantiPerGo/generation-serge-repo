@@ -1,18 +1,26 @@
+// CSS import
+import "../../styles/ParagraphLink/paragraph-link.css";
+
+// Prop types import
+import PropTypes from "prop-types";
+
 // Props (properties) communicates father components with son components
-const ParagraphLink = (props) => {
+// Alternative for props: ({ href, color, children: text })
+const ParagraphLink = props => {
   /*
     Desestructuring arrays and objects
 
     const [varA, , varB] = [23, 45, 67;
     const { varC, varD: varG } = { varC: val, varF: val, varG: val };
   */
-  const { href, color, children: text } = props;
+  const { href, color = "gray", children: text } = props;
 
   // To change style we have to create a JS object
   const anchorStyles = {
-    textDecoration: "none",
     color: color,
-    fontSize: "25px",
+
+    // CSS properties use camelCase and quotes
+    marginTop: "5px"
   };
 
   const myParagraph = (
@@ -21,12 +29,17 @@ const ParagraphLink = (props) => {
     <>
       {/* The {} brackets contains JS code */}
       <a href={href} target="_blank" style={anchorStyles}>
-        <p>{text}</p>
+        <p className="content">{text}</p>
       </a>
     </>
   );
 
   return myParagraph;
+};
+
+ParagraphLink.propTypes = {
+    href: PropTypes.string.isRequired,
+    children: PropTypes.string.isRequired
 };
 
 export default ParagraphLink;

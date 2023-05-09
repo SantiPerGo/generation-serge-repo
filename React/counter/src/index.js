@@ -19,5 +19,8 @@ root.render(
     <Paragraph href="https://www.linkedin.com/" color="purple">
       LinkedIn link
     </Paragraph>
+
+    <Paragraph href="#">False link one</Paragraph>
+    <Paragraph href="#">False link two</Paragraph>
   </React.StrictMode>
 );

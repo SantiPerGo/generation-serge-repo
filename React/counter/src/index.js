@@ -1,6 +1,10 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
-import Paragraph from "./components/ParagraphLink/ParagraphLink";
+import { App } from "./App";
+
+// Bootstrap files
+import "bootstrap/dist/css/bootstrap.min.css";
+import "bootstrap/dist/js/bootstrap.bundle.min.js";
 
 // Connection with the root div to render react components
 const root = ReactDOM.createRoot(document.getElementById("root"));
@@ -8,19 +12,6 @@ const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
   // Strict mode checks if there is a syntax error
   <React.StrictMode>
-    <Paragraph href="https://legacy.reactjs.org/" color="red">
-      React legacy documentation link
-    </Paragraph>
-
-    <Paragraph href="https://www.youtube.com/" color="green">
-      YouTube link
-    </Paragraph>
-
-    <Paragraph href="https://www.linkedin.com/" color="purple">
-      LinkedIn link
-    </Paragraph>
-
-    <Paragraph href="#">False link one</Paragraph>
-    <Paragraph href="#">False link two</Paragraph>
+    <App />
   </React.StrictMode>
 );

@@ -1,5 +1,5 @@
 // CSS import
-import "../../styles/ParagraphLink/paragraph-link.css";
+import "../../styles/paragraphLink/paragraph-link.css";
 
 // Prop types import
 import PropTypes from "prop-types";

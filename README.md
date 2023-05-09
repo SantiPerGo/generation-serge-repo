@@ -1,9 +1,7 @@
 # generation-serge-repo
 <p><b>Repo for Sergio examples and exercises</b></p>
 
-Examples:
-<ol>
-    <li>JavaScript</li>
+HTML, CSS and JavaScript Examples:
     <ol>
     	<li>Basic structure for an HTML, CSS and JS project</li>
     	<li>Bootstrap Grid Examples</li>
@@ -28,5 +26,7 @@ Examples:
 		</ol>
     </ol>
 
-    <li>React</li>
-</ol>
+React Examples:
+    <ol>
+    	<li>Counter (components and props)</li>
+    </ol>

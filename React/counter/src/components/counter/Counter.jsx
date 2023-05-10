@@ -1,29 +1,40 @@
-import React from 'react'
+import React, { useState } from 'react'
+import { CounterButton } from '../counterButton/CounterButton';
 
-export const Counter = () => {
-  let counter = 100;
+export const Counter = ({initialValue = 0, increment = 1, decrement = 1}) => {
+  console.log("Counter Component Rendering...");
 
-  // The onClick method send as parameter an event
-  // const method = event => ...;
-  const handleIncrement = () => counter++;
-  const handleDecrement = () => counter--;
+  // Hook, updates the component when something change
+  // useState(value) returns [readOnlyValue, setterCallbackMethod]
+  const [counter, setcounter] = useState(initialValue);
+
+  // Setcounter reloads or renders again the component
+  // But the useState line doesn't execute in the next times
+  // setcounter(newValue);
+
+  // So counter variable is not changing immediately
+  console.log(counter);
 
   return (
     <>
       <h1>Counter</h1>
       <h2>{counter}</h2>
 
-      <button onClick={handleIncrement} className="btn btn-outline-success">
+      <CounterButton hookMethod={setcounter} newValue={counter+increment} color="green">
         +
-      </button>
+      </CounterButton>
 
-      <button onClick={handleDecrement} className="btn btn-outline-danger mx-3">
+      <CounterButton hookMethod={setcounter} newValue={counter-decrement} color="red">
         -
-      </button>
+      </CounterButton>
 
-      <button onClick={() => counter = 100} className="btn btn-outline-primary">
+      <CounterButton hookMethod={setcounter} newValue={initialValue} color="blue">
         Reset
-      </button>
+      </CounterButton>
+
+      <CounterButton hookMethod={setcounter} newValue={Infinity}>
+        Set Counter to Infinity
+      </CounterButton>
     </>
   )
 }

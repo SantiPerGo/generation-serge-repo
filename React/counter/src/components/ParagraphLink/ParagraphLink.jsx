@@ -24,6 +24,7 @@ const ParagraphLink = props => {
   };
 
   const myParagraph = (
+    // We need to have all the HTML tags in a father element
     // React fragment dissapear durint the website rendering
     // <> = <React.Fragment>
     <>

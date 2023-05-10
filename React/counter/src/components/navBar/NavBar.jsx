@@ -1,4 +1,12 @@
 import React from "react";
+import { Link } from "react-router-dom/dist";
+
+const appRoutes = [
+  {name: "Home", url: "/"},
+  {name: "Social Networks", url: "social-networks"},
+  {name: "Counter 1", url: "counter/1"},
+  {name: "Counter 2", url: "counter/2"}
+];
 
 export const NavBar = () => {
   return (
@@ -22,24 +30,16 @@ export const NavBar = () => {
 
           <div className="collapse navbar-collapse" id="navbarNav">
             <ul className="navbar-nav">
-              <li className="nav-item">
-                <a className="nav-link active" aria-current="page" href="#">
-                  Home
-                </a>
-              </li>
-              <li className="nav-item">
-                <a className="nav-link" href="#">
-                  Features
-                </a>
-              </li>
-              <li className="nav-item">
-                <a className="nav-link" href="#">
-                  Pricing
-                </a>
-              </li>
-              <li className="nav-item">
-                <a className="nav-link disabled">Disabled</a>
-              </li>
+              {
+                appRoutes.map(data =>
+                  <li key={data.url} className="nav-item">
+                    {/* Link avoids to render all the page, so we don't use <a> */}
+                    <Link className="nav-link" to={data.url}>
+                      {data.name}
+                    </Link>
+                  </li>
+                )
+              }
             </ul>
           </div>
         </div>

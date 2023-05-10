@@ -1,5 +1,7 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
+import { BrowserRouter } from "react-router-dom";
+
 import { App } from "./App";
 
 // Bootstrap files
@@ -12,6 +14,8 @@ const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
   // Strict mode checks if there is a syntax error
   <React.StrictMode>
-    <App />
+    <BrowserRouter>
+      <App />
+    </BrowserRouter>
   </React.StrictMode>
 );

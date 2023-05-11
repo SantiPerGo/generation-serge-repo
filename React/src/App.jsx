@@ -18,9 +18,11 @@ export const App = () => {
         <Route path='*' element={ <Navigate to='/' /> } />
         <Route path="/" element={ <Home /> } />
         <Route path="social-networks" element={ <SocialNetworks /> } />
-        <Route path='counter' element={ <NotFound /> } />
-        <Route path="counter/1" element={ <Counter /> } />
-        <Route path="counter/2" element={ <Counter initialValue={100} increment={5} decrement={2} /> } />   
+        <Route path='not-found' element={ <NotFound /> } />
+
+        {/* React uses the key property to identify different components in the same url */}
+        <Route path="counter/1" element={ <Counter key={1} /> } />
+        <Route path="counter/2" element={ <Counter key={2} initialValue={100} increment={5} decrement={2} /> } />   
       </Routes>
       
       <Footer />

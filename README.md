@@ -28,5 +28,12 @@ HTML, CSS and JavaScript Folder:
 
 React Folder:
     <ol>
-    	<li>Counter (components and props)</li>
+    	<li>Counter Project with:</li>
+		<ol>
+			<li>Components</li>
+			<li>Props</li>
+			<li>Hooks</li>
+			<li>Routes (React Router)</li>
+			<li>Designs, Icons and Fonts (Bootstrap and Material UI)</li>
+		</ol>
     </ol>

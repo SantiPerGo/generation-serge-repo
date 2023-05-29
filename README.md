@@ -37,3 +37,15 @@ React Folder:
 			<li>Designs, Icons and Fonts (Bootstrap and Material UI)</li>
 		</ol>
     </ol>
+
+
+Java Folder:
+    <ol>
+    	<li>Hello World</li>
+	<li>Loops, Functions and Collections</li>
+	<li>OOP with ATM Example</li>
+	<li>Encapsulation and Exceptions</li>
+	<li>Inheritance with Animal > Canine > Dog Examples</li>
+	<li>Multithreads with Thread and Runnable</li>
+	<li>Unit Testing with JUnit</li>
+    </ol>

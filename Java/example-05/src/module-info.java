@@ -1,0 +1,9 @@
+/**
+ * 
+ */
+/**
+ * @author Santi
+ *
+ */
+module Inheritance {
+}

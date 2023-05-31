@@ -26,6 +26,24 @@ HTML, CSS and JavaScript Folder:
 		</ol>
     </ol>
 
+Java Folder:
+    <ol>
+    	<li>Hello World</li>
+	<li>Loops, Functions and Collections</li>
+	<li>OOP with ATM Example</li>
+	<li>Encapsulation and Exceptions</li>
+	<li>Inheritance with Animal > Canine > Dog Examples</li>
+	<li>Multithreads with Thread and Runnable</li>
+	<li>Unit Testing with JUnit</li>
+    </ol>
+
+MySQL Folder:
+    <ol>
+    	<li>EER Diagram, Selects and Inserts</li>
+    	<li>Select, Where, Insert, Update, Dates, Strings, Views and Procedures</li>
+    	<li>Joins (Inner, Left and Right)</li>
+    </ol>
+
 React Folder:
     <ol>
     	<li>Counter Project with:</li>
@@ -36,16 +54,4 @@ React Folder:
 			<li>Routes (React Router)</li>
 			<li>Designs, Icons and Fonts (Bootstrap and Material UI)</li>
 		</ol>
-    </ol>
-
-
-Java Folder:
-    <ol>
-    	<li>Hello World</li>
-	<li>Loops, Functions and Collections</li>
-	<li>OOP with ATM Example</li>
-	<li>Encapsulation and Exceptions</li>
-	<li>Inheritance with Animal > Canine > Dog Examples</li>
-	<li>Multithreads with Thread and Runnable</li>
-	<li>Unit Testing with JUnit</li>
     </ol>

@@ -12,6 +12,9 @@ INSERT INTO categories (name, description) VALUES ('Negocios y Finanzas', 'Empre
 INSERT INTO categories (name, description) VALUES ('Entretenimiento', 'Eventos y opciones de entretenimiento');
 
 INSERT INTO categories (name, description) VALUES ('Videojuegos', 'Videojuegos para Xbox');
+INSERT INTO categories (name, description) VALUES ('Hogar', 'Hogar y decoración');
+INSERT INTO categories (name, description) VALUES ('Mascotas', 'Todo para su mascota');
+
 DELETE FROM categories WHERE category_id = 11;
 
 UPDATE categories SET category_id =12 WHERE category_id = 1;

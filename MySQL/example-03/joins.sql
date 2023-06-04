@@ -35,3 +35,46 @@ SELECT concat(firstname, " ", lastname) AS name,
     ON orders.order_id = orders_has_products.order_id
     INNER JOIN products
     ON orders_has_products.product_id = products.product_id;
+    
+-- Combines both tables even with null foreing keys
+SELECT * FROM products CROSS JOIN categories;
+
+-- USING with same foreign key name
+SELECT products.*, categories.*
+	FROM products INNER JOIN categories
+    -- ON customers.customer_id = orders.customer_id
+    USING (category_id)
+    -- GROUP BY categories.category_id
+    ORDER BY categories.category_id ASC;
+    
+-- Elements of products that aren't in the join  
+SELECT * FROM products WHERE product_id NOT IN (1,2,3,4,6,7,8,9,10,12,14,15,16,17);  
+SELECT *
+	FROM products 
+	WHERE product_id
+	NOT IN (
+		SELECT product_id
+		FROM products 
+		INNER JOIN categories
+		USING (category_id)
+		ORDER BY product_id ASC
+	);
+        
+-- Getting customers with orders and products
+-- Even if the products has null value in the categories
+SELECT 
+		firstname, lastname,
+		purchase_date, delivery_date,
+        amount,
+        products.name AS product_name,
+        categories.name AS category,
+		price       
+	FROM customers
+    INNER JOIN orders
+    ON customers.customer_id = orders.customer_id
+    INNER JOIN orders_has_products
+    ON orders.order_id = orders_has_products.order_id
+    INNER JOIN products
+    ON orders_has_products.product_id = products.product_id
+    LEFT JOIN categories
+    USING (category_id);

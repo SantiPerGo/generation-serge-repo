@@ -23,6 +23,13 @@ SELECT * FROM products LEFT JOIN categories
 -- of the left table, if not found it is null
 SELECT * FROM products RIGHT JOIN categories
 	ON products.category_id = categories.category_id;
+    
+-- Combines both tables even with null foreing keys
+SELECT * FROM products CROSS JOIN categories;
+
+-- Natural = Inner, but we don't have to specify
+-- The columns with the same name in both tables
+SELECT * FROM products NATURAL JOIN categories;
         
 -- Combining all the tables
 SELECT concat(firstname, " ", lastname) AS name,
@@ -35,9 +42,6 @@ SELECT concat(firstname, " ", lastname) AS name,
     ON orders.order_id = orders_has_products.order_id
     INNER JOIN products
     ON orders_has_products.product_id = products.product_id;
-    
--- Combines both tables even with null foreing keys
-SELECT * FROM products CROSS JOIN categories;
 
 -- USING with same foreign key name
 SELECT products.*, categories.*

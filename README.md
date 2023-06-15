@@ -42,6 +42,9 @@ MySQL Folder:
     	<li>EER Diagram, Selects and Inserts</li>
     	<li>Select, Where, Insert, Update, Dates, Strings, Views and Procedures</li>
     	<li>Joins (Inner, Left and Right)</li>
+    	<li>Creation of Users with Privileges</li>
+    	<li>Analyzing the CDMX Subway Project</li>
+    	<li>Students and Courses Exercise</li>
     </ol>
 
 React Folder:
@@ -54,4 +57,13 @@ React Folder:
 			<li>Routes (React Router)</li>
 			<li>Designs, Icons and Fonts (Bootstrap and Material UI)</li>
 		</ol>
+    </ol>
+
+Spring Boot:
+    <ol>
+    	<li>Basic Controller Annotations</li>
+    	<li>MVC Example with Thymeleaf</li>
+    	<li>Dependency Injection, Lombok, Slf4j and Qualifier</li>
+    	<li>JPA Example</li>
+    	<li>Complete Spring Boot Project with JWT Tokens</li>
     </ol>
